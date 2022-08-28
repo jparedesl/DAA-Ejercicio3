@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- div USA -->
+
+    <TextView
+        android:id="@+id/textpeso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtValorFinal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <TextView
+        android:id="@+id/textpeso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtValorFinal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
+        android:background="@drawable/estilo_der_radios"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176">
+
+        <ImageView
+            android:id="@+id/iconodolar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/valor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconoeeuu" />
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textUSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textUSD"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textUSDollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textUSDollar"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/valorusd"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/ingrese_valor"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/calculadora1"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:onClick="convertCurrencyUSD"
+            app:srcCompat="@drawable/icono_calculadora" />
+    </LinearLayout>
+    <!--Fin div USA -->
+    <!-- div EURO -->.
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
+        android:background="@drawable/estilo_der_radios"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.301">
+
+        <ImageView
+            android:id="@+id/iconoeuro"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/valor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconoeuro" />
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textEUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textEUR"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textEURO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textEURO"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/valoreuro"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/ingrese_valor"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/calculadora2"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:onClick="convertCurrencyEURO"
+            app:srcCompat="@drawable/icono_calculadora" />
+    </LinearLayout>
+    <!-- Fin div EURO -->
+</androidx.constraintlayout.widget.ConstraintLayout>

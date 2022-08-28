@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio 3</string>
+    <string name="valor">Valor</string>
+    <string name="textUSD">USD</string>
+    <string name="textUSDollar">US Dollar</string>
+    <string name="valorusd">$1,000.00</string>
+    <string name="ingrese_valor">Ingrese valor</string>
+    <string name="textEUR">EUR</string>
+    <string name="textEURO">Euro</string>
+    <string name="txtValorFinal">...</string>
+    <string name="no_value_string">No hay valor</string>
+</resources>
